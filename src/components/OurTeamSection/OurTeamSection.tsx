@@ -1,3 +1,4 @@
+import { SectionHeading } from "..";
 import { memberProps } from "../../types/type";
 import TeamCard from "../TeamCard/TeamCard";
 
@@ -60,9 +61,7 @@ const OurTeamSection = () => {
    ];
    return (
       <div>
-         <h3 className="text-3xl font-bold text-center  underline uppercase text-primary my-10 ">
-            our team
-         </h3>
+         <SectionHeading text="our team"></SectionHeading>
          <div className="grid   grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-6 md:px-10">
             {team.map((member: memberProps, idx: number) => (
                <TeamCard key={idx} member={member}></TeamCard>
