@@ -1,7 +1,19 @@
 import { SectionHeading } from "..";
 import { memberProps } from "../../types/type";
 import TeamCard from "../TeamCard/TeamCard";
+import { Swiper, SwiperSlide } from "swiper/react";
 
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/pagination";
+
+// import required modules
+import {
+   Pagination,
+   Autoplay,
+   Navigation,
+   EffectCoverflow,
+} from "swiper/modules";
 const OurTeamSection = () => {
    const team: memberProps[] = [
       {
@@ -62,11 +74,40 @@ const OurTeamSection = () => {
    return (
       <div>
          <SectionHeading text="our team"></SectionHeading>
-         <div className="grid   grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 px-6 md:px-10">
+         <Swiper
+            effect={"coverflow"}
+            grabCursor={true}
+            centeredSlides={true}
+            slidesPerView={1}
+            breakpoints={{
+               640: {
+                  slidesPerView: 1,
+               },
+               768: {
+                  slidesPerView: 2,
+               },
+               1024: {
+                  slidesPerView: 3,
+               },
+            }}
+            coverflowEffect={{
+               rotate: 45,
+               stretch: 0,
+               depth: 100,
+               modifier: 1,
+               slideShadows: true,
+            }}
+            pagination={true}
+            navigation={true}
+            modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
+            className="w-full"
+         >
             {team.map((member: memberProps, idx: number) => (
-               <TeamCard key={idx} member={member}></TeamCard>
+               <SwiperSlide key={idx}>
+                  <TeamCard member={member}></TeamCard>
+               </SwiperSlide>
             ))}
-         </div>
+         </Swiper>
       </div>
    );
 };

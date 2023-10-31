@@ -11,6 +11,7 @@ interface ButtonProps {
 }
 
 interface serviceCardProps {
+   idx: number;
    icon?: childrenType;
    title: string;
    description: string;

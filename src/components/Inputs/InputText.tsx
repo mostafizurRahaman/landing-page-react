@@ -1,7 +1,6 @@
-/* eslint-disable react/prop-types */
-
+import { ErrorMessage } from "..";
 import { InputTextProps } from "../../types/type";
-import ErrorMessage from "../ErrorMessage";
+
 
 const InputText = ({
    type,

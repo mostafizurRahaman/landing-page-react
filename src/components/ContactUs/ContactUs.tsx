@@ -2,7 +2,7 @@ import { Button, InputText, InputTextBox, SectionHeading } from "..";
 
 const ContactUs = () => {
    return (
-      <section className="py-10  px-6 md:px-10 bg-primary mt-16">
+      <section className="py-10  px-6 md:px-10 bg-primary mt-16 mb-0">
          <SectionHeading
             text="Contact Us"
             textStyles="text-white"
@@ -27,7 +27,7 @@ const ContactUs = () => {
                label="Your phone"
             ></InputText>
             <InputTextBox
-               label="Your Messaage"
+               label="Your Message"
                rows={7}
                cols={10}
                name="message"

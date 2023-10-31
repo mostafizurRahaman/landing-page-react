@@ -2,7 +2,7 @@ import { Button } from "..";
 import aboutUs from "../../assets/about-us.png";
 const Aboutus = () => {
    return (
-      <div className="flex items-center gap-5">
+      <section className="flex items-center gap-10 md:gap-5 md:flex-row flex-col px-6 md:px-16">
          <div className=" w-full md:w-1/2">
             <img src={aboutUs} alt="" className="w-full h-auto" />
          </div>
@@ -28,7 +28,7 @@ const Aboutus = () => {
                ></Button>
             </div>
          </div>
-      </div>
+      </section>
    );
 };
 
