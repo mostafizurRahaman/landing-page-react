@@ -30,7 +30,7 @@ const TestimonialSection = () => {
       },
    ];
    return (
-      <section className="md:px-10 px-5 py-10">
+      <section id="review" className="md:px-10 px-5 py-10">
          <SectionHeading text="Customer Reviews"></SectionHeading>
          <div className="grid grid-cols-1 md:grid-cols-3 gap-5  ">
             {testimonials.map((i: TestimonialProps, idx: number) => (

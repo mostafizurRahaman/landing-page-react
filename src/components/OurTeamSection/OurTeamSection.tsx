@@ -72,7 +72,7 @@ const OurTeamSection = () => {
       },
    ];
    return (
-      <div>
+      <div id="team">
          <SectionHeading text="our team"></SectionHeading>
          <Swiper
             effect={"coverflow"}

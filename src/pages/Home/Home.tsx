@@ -6,6 +6,7 @@ import {
    TestimonialSection,
 } from "../../components";
 import Aboutus from "../../components/Aboutus/Aboutus";
+import Footer from "../../components/Footer/Footer";
 import OurTeamSection from "../../components/OurTeamSection/OurTeamSection";
 import PriceingSection from "../../components/PriceingSection/PriceingSection";
 
@@ -20,6 +21,7 @@ const Home = () => {
          <TestimonialSection></TestimonialSection>
          <BlogSection></BlogSection>
          <ContactUs></ContactUs>
+         <Footer></Footer>
       </div>
    );
 };

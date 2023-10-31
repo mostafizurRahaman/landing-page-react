@@ -4,6 +4,7 @@ import styles from "./banner.module.css";
 const Banner = () => {
    return (
       <div
+         id="home"
          className={`min-h-screen text-white flex items-center justify-center flex-col md:flex-row px-6 md:px-10 ${styles.bg} pt-7  `}
       >
          <div

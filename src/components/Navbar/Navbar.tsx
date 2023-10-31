@@ -10,7 +10,9 @@ const Navbar = () => {
       >
          <div className="">
             <div className="text-white font-bold uppercase text-2xl flex gap-3 items-center justify-starts ">
-               <h2>Netex</h2>
+               <h2>
+                  <a href="#home">Nitex Hosting</a>
+               </h2>
             </div>
          </div>
          <nav
@@ -18,11 +20,21 @@ const Navbar = () => {
                open ? " left-0" : " top-20 left-[-999px]"
             }`}
          >
-            <li className="text-sm capitalize list-none ">Dashboard</li>
-            <li className="text-sm capitalize list-none ">Dashboard</li>
-            <li className="text-sm capitalize list-none ">Dashboard</li>
-            <li className="text-sm capitalize list-none ">Dashboard</li>
-            <li className="text-sm capitalize list-none ">Dashboard</li>
+            <li className="text-sm capitalize list-none ">
+               <a href="#home">Home</a>
+            </li>
+            <li className="text-sm capitalize list-none ">
+               <a href="#service">service</a>
+            </li>
+            <li className="text-sm capitalize list-none ">
+               <a href="#blog">blog</a>
+            </li>
+            <li className="text-sm capitalize list-none ">
+               <a href="#team">team</a>
+            </li>
+            <li className="text-sm capitalize list-none ">
+               <a href="#review">Testimonials</a>
+            </li>
          </nav>
          <div
             onClick={() => setOpen((prev) => !prev)}

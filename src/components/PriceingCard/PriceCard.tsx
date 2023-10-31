@@ -3,7 +3,10 @@ import cardImage from "../../assets/server.png";
 
 const PriceCard = () => {
    return (
-      <div className="bg-secondary p-5  shadow-[5px_5px_10px_1px_#ddd] rounded-b-lg rounded-full  pt-20  flex flex-col gap-3 items-center">
+      <div
+         data-aos="flip-right"
+         className="bg-secondary p-5  shadow-[5px_5px_10px_1px_#ddd] rounded-b-lg rounded-full  pt-20  flex flex-col gap-3 items-center"
+      >
          <h3 className="text-xl text-center  font-bold uppercase mb-10">
             service name
          </h3>
