@@ -18,12 +18,10 @@ interface memberProps {
    name: string;
    designation: string;
    image: string;
-   social: [
-      {
-         site: string;
-         links: string;
-      }
-   ];
+   facebook: string;
+   linkedin: string;
+   twitter: string;
+   instagram: string;
 }
 
 export type { ButtonProps, serviceCardProps, childrenType, memberProps };
