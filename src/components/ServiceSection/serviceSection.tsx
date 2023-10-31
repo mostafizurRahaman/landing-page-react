@@ -20,7 +20,7 @@ const ServiceSection = () => {
       },
    ];
    return (
-      <div className="grid grid-col-1   md:grid-cols-3 gap-5 w-[90%] md:-my-14 mx-auto md:py-0 py-10">
+      <div className="grid grid-col-1   md:grid-cols-3 gap-5 w-[90%] md:-my-14 mx-auto md:pt-0 pb-10 pt-10 ">
          {services.map((i, idx) => (
             <ServiceCard
                key={idx}
@@ -28,7 +28,7 @@ const ServiceSection = () => {
                description={i.description}
                icon={
                   <SiGotomeeting
-                     className="text-primary"
+                     className=" text-white "
                      size={40}
                   ></SiGotomeeting>
                }

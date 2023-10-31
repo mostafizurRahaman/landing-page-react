@@ -14,4 +14,16 @@ interface serviceCardProps {
    description: string;
 }
 
-export type { ButtonProps, serviceCardProps, childrenType };
+interface memberProps {
+   name: string;
+   designation: string;
+   image: string;
+   social: [
+      {
+         site: string;
+         links: string;
+      }
+   ];
+}
+
+export type { ButtonProps, serviceCardProps, childrenType, memberProps };
