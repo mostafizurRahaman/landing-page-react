@@ -10,5 +10,5 @@ body {
 }
 
 .btn {
-   @apply text-lg px-6 py-2 rounded-md border-[1.4px] border-secondary;
+   @apply text-lg px-6 py-2 rounded-full border-[1.4px] bg-pink-600 border-secondary hover:bg-accent;
 }
