@@ -8,7 +8,8 @@ const PriceCard = () => {
             service name
          </h3>
          <img src={cardImage} alt="" className="w-3/5 mx-auto" />
-         <h6 className="text-lg  font-bold text-gray-500 capitalize text-center my-5">
+         <h4 className="text-5xl font-bold text-blue-500 mt-5">$570</h4>
+         <h6 className="text-lg  font-bold text-gray-500 capitalize text-center">
             per month
          </h6>
          <ul className="flex items-center flex-col justify-center gap-2 text-xl text-gray-500 hover:text-primary">

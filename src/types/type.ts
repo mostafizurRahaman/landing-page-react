@@ -24,4 +24,19 @@ interface memberProps {
    instagram: string;
 }
 
-export type { ButtonProps, serviceCardProps, childrenType, memberProps };
+interface TestimonialProps {
+   _id?: string;
+   name: string;
+   userName: string;
+   reviews: number;
+   message: string;
+   image: string;
+}
+
+export type {
+   ButtonProps,
+   serviceCardProps,
+   childrenType,
+   memberProps,
+   TestimonialProps,
+};

@@ -8,7 +8,10 @@ import TeamCard from "./TeamCard/TeamCard";
 import PriceCard from "./PriceingCard/PriceCard";
 import PriceSection from "./PriceingSection/PriceingSection";
 import SectionHeading from "./SectionHeading/SectionHeading";
-
+import TestimonialCard from "./Testimonial/TestimonialCad";
+import TestimonialSection from "./Testimonial/TestimonialSection";
+import BlogSection from "./blog/BlogSection";
+import Blog from "./blog/blog";
 export {
    Navbar,
    Banner,
@@ -19,5 +22,9 @@ export {
    TeamCard,
    PriceCard,
    PriceSection,
-   SectionHeading
+   SectionHeading,
+   TestimonialCard,
+   TestimonialSection,
+   BlogSection,
+   Blog,
 };
