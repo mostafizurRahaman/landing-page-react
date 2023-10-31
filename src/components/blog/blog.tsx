@@ -1,3 +1,4 @@
+import { Button } from "..";
 import image from "../../assets/text.jpg";
 import { BsFillCalendarFill } from "react-icons/bs";
 const Blog = () => {
@@ -38,6 +39,14 @@ const Blog = () => {
                   accusamus mollitia voluptates ipsam! Ratione perspiciatis quis
                   atque impedit vel iste fugit maxime adipisci, laudantium sequi
                </p>
+            </div>
+            <div className="flex items-center justify-center">
+               <Button
+                  text="get started"
+                  containerStyles="px-10 py-2 rounded-full border-2 border-white 
+            bg-gradient-to-r from-primary via-blue-500 to-purple-600 mx-auto mt-7 inline-block text-white capitalize hover:scale-95
+         "
+               ></Button>
             </div>
          </div>
       </div>

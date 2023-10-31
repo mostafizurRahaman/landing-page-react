@@ -11,7 +11,12 @@ import SectionHeading from "./SectionHeading/SectionHeading";
 import TestimonialCard from "./Testimonial/TestimonialCad";
 import TestimonialSection from "./Testimonial/TestimonialSection";
 import BlogSection from "./blog/BlogSection";
+
 import Blog from "./blog/blog";
+import InputText from "./Inputs/InputText";
+import InputTextBox from "./Inputs/InputTextBox";
+import ErrorMessage from "./ErrorMessage";
+import ContactUs from "./ContactUs/ContactUs";
 export {
    Navbar,
    Banner,
@@ -27,4 +32,8 @@ export {
    TestimonialSection,
    BlogSection,
    Blog,
+   ContactUs,
+   InputText,
+   InputTextBox,
+   ErrorMessage,
 };

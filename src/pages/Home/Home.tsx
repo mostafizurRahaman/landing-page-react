@@ -1,6 +1,7 @@
 import {
    Banner,
    BlogSection,
+   ContactUs,
    ServiceSection,
    TestimonialSection,
 } from "../../components";
@@ -18,6 +19,7 @@ const Home = () => {
          <PriceingSection></PriceingSection>
          <TestimonialSection></TestimonialSection>
          <BlogSection></BlogSection>
+         <ContactUs></ContactUs>
       </div>
    );
 };

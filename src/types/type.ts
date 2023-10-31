@@ -1,5 +1,7 @@
-import { MouseEvent } from "react";
+import { MouseEvent, ChangeEvent } from "react";
 
+type ChangeElementType = (e: ChangeEvent<HTMLInputElement>) => void;
+type ChangeElementTextBox = (e: ChangeEvent<HTMLTextAreaElement>) => void;
 type childrenType = React.ReactNode;
 interface ButtonProps {
    text: string;
@@ -33,10 +35,34 @@ interface TestimonialProps {
    image: string;
 }
 
+interface InputTextProps {
+   type: string;
+   name: string;
+   onChange?: ChangeElementType;
+   placeholder: string;
+   error?: string;
+   label: string;
+   initialValue?: string;
+   styles?: string;
+}
+
+interface InputTextBoxProps {
+   label: string;
+   rows: number;
+   cols: number;
+   name: string;
+   placeholder: string;
+   onChange?: ChangeElementTextBox;
+   initialValue?: string;
+   error?: string;
+   styles?: string;
+}
 export type {
    ButtonProps,
    serviceCardProps,
    childrenType,
    memberProps,
    TestimonialProps,
+   InputTextProps,
+   InputTextBoxProps,
 };
