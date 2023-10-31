@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=AR+One+Sans:wght@400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   font-family: "AR One Sans", sans-serif;
+   display: block;
+}
+
+.btn {
+   @apply text-lg px-6 py-2 rounded-md border-[1.4px] border-secondary;
+}
